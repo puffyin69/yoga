@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -39,18 +38,18 @@ const Navbar = () => {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex gap-8 items-center">
-                    <Link href="/" className="font-medium hover:text-amber-400 transition-colors">
+                    <div className="font-medium hover:text-amber-400 transition-colors cursor-pointer">
                         Home
-                    </Link>
-                    <Link href="/classes" className="font-medium hover:text-amber-400 transition-colors">
+                    </div>
+                    <div className="font-medium hover:text-amber-400 transition-colors cursor-pointer">
                         Classes
-                    </Link>
-                    <Link href="/about" className="font-medium hover:text-amber-400 transition-colors">
+                    </div>
+                    <div className="font-medium hover:text-amber-400 transition-colors cursor-pointer">
                         About Us
-                    </Link>
-                    <Link href="/contact" className="font-medium hover:text-amber-400 transition-colors">
+                    </div>
+                    <div className="font-medium hover:text-amber-400 transition-colors cursor-pointer">
                         Contact
-                    </Link>
+                    </div>
                     <button className={`px-5 py-2 rounded-full font-medium transition-all ${
                         scrolled 
                         ? "bg-amber-500 text-white hover:bg-amber-600" 
@@ -81,18 +80,18 @@ const Navbar = () => {
             {mobileMenuOpen && (
                 <div className="md:hidden bg-white shadow-lg absolute top-full left-0 right-0 py-4 px-6">
                     <div className="flex flex-col gap-4">
-                        <Link href="/" className="text-gray-800 font-medium hover:text-amber-400">
+                        <div className="text-gray-800 font-medium hover:text-amber-400 cursor-pointer">
                             Home
-                        </Link>
-                        <Link href="/classes" className="text-gray-800 font-medium hover:text-amber-400">
+                        </div>
+                        <div className="text-gray-800 font-medium hover:text-amber-400 cursor-pointer">
                             Classes
-                        </Link>
-                        <Link href="/about" className="text-gray-800 font-medium hover:text-amber-400">
+                        </div>
+                        <div className="text-gray-800 font-medium hover:text-amber-400 cursor-pointer">
                             About Us
-                        </Link>
-                        <Link href="/contact" className="text-gray-800 font-medium hover:text-amber-400">
+                        </div>
+                        <div className="text-gray-800 font-medium hover:text-amber-400 cursor-pointer">
                             Contact
-                        </Link>
+                        </div>
                         <button className="bg-amber-500 text-white px-5 py-2 rounded-full font-medium hover:bg-amber-600 transition-colors w-full mt-2">
                             Book Now
                         </button>
